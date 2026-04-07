@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Projets</title>
+  <title>Téléchargement de fichiers</title>
+  <style>
+    /* Reset simple */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #222;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #4a90e2;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    a.download-btn:hover {
+      background: #357ab8;
+      transform: translateY(-2px);
+    }
+
+    p {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Projets AP3</h1>
-
-  <ul>
-    <li><a href="docs.zip" download>Télécharger tous les fichiers</a></li>
-  
-
+  <div class="container">
+    <h1>📁 Mes fichiers à télécharger</h1>
+    <ul>
+      <li><a class="download-btn" href="docs.zip" download>📄 Télécharger tout les fichiers</a></li>
+      <li><a class="download-btn" href="nhl.sql" download>📦 Télécharger la base de données</a></li>
+    </ul>
+    <p>Tous les fichiers sont disponibles en un clic.</p>
+  </div>
 </body>
 </html>
